@@ -1,0 +1,216 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --color-primario: #232020;
+    --color-texto-blanco: #F4F4F4;
+    --color-texto-CafeClaro:#3A3535;
+    --color-texto-Naranja: #FF7315;
+    --color-texto-Crema: #E4C59E;
+    --color-Hover: #272727;
+
+    --fuente-Monserrat: "Montserrat", sans-serif;
+    --fuente-Krona: "Krona One", sans-serif;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: var(--color-primario);
+    color: var(--color-texto-blanco);
+    box-sizing: border-box;
+}
+.header{
+    padding: 3% 0% 0% 15%;
+    }
+.header__menu{
+    display: flex;
+    gap: 10%;           
+}
+.header__menu_link{
+    color: var(--color-texto-Naranja);
+    font-family: var(--fuente-Monserrat);
+    font-size: 1.25rem;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    width: 50%;
+   }
+
+.header__menu_link:hover{
+    font-size: 1.75rem;
+    color: var(--color-texto-Crema);
+}
+
+strong{
+    color: var(--color-texto-Crema);
+}
+h1{
+    font-weight: bold;
+}
+span{
+    color: var(--color-texto-azul);
+    border: 1px solid var(--color-texto-azul);
+    padding: 10px;
+}
+.tituloResaltado{
+    color: var(--color-texto-Crema);
+}
+.presentacion{
+    display: flex;
+    align-items: center;
+    padding: 5% 15%;
+    justify-content: space-between;
+    gap: 82px;
+}
+.presentacion__contenido{
+    gap: 40px;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.presentacion__contenido__titulo{
+    font-size: 2.25rem;
+    font-family: var(--fuente-Krona);
+    color: var(--color-texto-Crema)
+}
+.presentacion__contenido__titulo2{
+    font-size: 2.25rem;
+    font-family: var(--fuente-Krona);
+    color: var(--color-texto-Crema);
+    padding: 5% 0% 5% 0%;
+    margin: 0px 0px;
+}
+
+.presentacion__contenido__texto{
+    font-size: 1.5rem;
+    font-family: var(--fuente-Monserrat);
+}
+.presentacion__contenido__texto2{
+    font-size: 1.5rem;
+    font-family: var(--fuente-Monserrat);
+    color:var(--color-texto-blanco);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 0% 0% 5% 0%;
+}
+
+.presentacion__enlaces{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+.presentacion__enlaces__Subtitulos{
+    font-family: var(--fuente-Krona);
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--color-texto-Crema);
+}
+.presentacion__Enlaces__Link{
+    width: 50%;
+    display: inline-block;
+    color: var(--color-texto-Naranja);
+    padding: 15px;
+    border-radius: 8px;
+    margin: 0px 0px;
+    text-align: center;
+    font-family: var(--fuente-Monserrat);
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-decoration: none;
+    border: 2px solid var(--color-texto-Naranja);
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.presentacion__Enlaces__Link:hover{
+    background-color: var(--color-Hover);
+    padding: 3%;
+    border-color: var(--color-texto-Crema);
+    box-shadow: 8px 8px 5px var(--color-texto-Crema);
+    color: var(--color-texto-Crema);
+    cursor: pointer;
+}
+.presentacion__enlaces__Subtitulos:hover{
+    font-size: 1.5625rem;
+    color: var(--color-texto-Amarilloverdoso);
+}
+.footer{
+    padding: 24px;
+    background-color: var(--color-texto-Naranja);
+    color: var(--color-primario);
+    text-align: center;
+    font-family: var(--fuente-Monserrat);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+.contenedor{
+    /*Este contenedor reemplazo a .presentacion ya que tenia que tener el GIF animado de fondo
+    Sin embargo conserva las caracteristicas de .presentacion*/
+    display: flex;
+    align-items: center;
+    padding: 6% 10%;
+    justify-content: space-between;
+    gap: 82px;
+    /*Esta parte es la del gif animado de fondo*/
+    background-image: url(6ef4.gif);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.presentacion__imagen{
+    width: 50%;
+}
+.presentacion__contenido__texto2B{
+    font-size: 1.25rem;
+    font-family: var(--fuente-Monserrat);
+    color: var(--color-texto-Naranja);  
+    text-decoration: none;
+    width: 200px;
+    display: block; /* Cambiado a block para ocupar toda la línea */
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 10px; /* Añade un margen superior para separar el enlace del texto del <li> */
+    margin-bottom: 30px; /* Añade un margen inferior para separar los elementos */
+    text-align: center;
+    font-weight: 600;
+    border: 2px solid var(--color-texto-Naranja);
+}
+.presentacion__contenido__texto2B:hover{
+    font-size: 1.5625rem;
+    color: var(--color-texto-Amarilloverdoso);
+    box-shadow: 8px 8px 5px var(--color-texto-Crema);
+    border: 2px solid var(--color-texto-Crema);
+
+}
+.presentacion__contenido__experiencias{
+    font-size: 2.25rem;
+    font-family: var(--fuente-Krona);
+    color: var(--color-texto-Crema);
+    padding: 0% 0% 0% 0%;
+    margin-bottom: 0%;
+    gap: 0%;
+    display: block;
+}
+
+@media (max-width: 1200px){
+    .presentacion{
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+    .header{
+        padding: 10%;
+    }
+    .header__menu{
+        justify-content: center;
+    }
+.presentacion__contenido{
+    width: auto;
+}
+}

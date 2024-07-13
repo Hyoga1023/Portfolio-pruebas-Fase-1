@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../Inicio curso"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Portafolio"
+	}
+}
